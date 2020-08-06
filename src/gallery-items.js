@@ -1,10 +1,10 @@
 export default [
   {
     preview:
-      'https://cdn.pixabay.com/photo/2019/05/14/16/43/hokkaido-4202825__340.jpg',
+      'https://pixabay.com/get/53e2d7434950a414f1dc8460da2932771338dded515777_640.jpg',
     original:
-      'https://cdn.pixabay.com/photo/2019/05/14/16/43/hokkaido-4202825_1280.jpg',
-    description: 'Hokkaido Flower',
+      'https://pixabay.com/get/53e2d7434950a414f6d1867dda35367b1c39d9e65b52724e_1920.jpg',
+    description: 'Suspisious fox',
   },
   {
     preview:
@@ -15,10 +15,10 @@ export default [
   },
   {
     preview:
-      'https://cdn.pixabay.com/photo/2019/05/16/09/47/view-4206785__340.jpg',
+      'https://pixabay.com/get/53e4d0464857af14f1dc8460da2932771338dded575073_640.jpg',
     original:
-      'https://cdn.pixabay.com/photo/2019/05/16/09/47/view-4206785_1280.jpg',
-    description: 'Aerial Beach View',
+      'https://pixabay.com/get/53e4d0464857af14f6da8c7dda35367b1c39d9e65b557540_1280.jpg',
+    description: 'Owl',
   },
   {
     preview:
