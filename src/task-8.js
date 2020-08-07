@@ -38,11 +38,10 @@ galleryItem.map((el) => {
 });
 
 function onOpenModal() {
-    const target = event.target;
     modalRef.classList.add("is-open");
-   LargeImgRef.setAttribute('src', `${target.dataset.source}`);
-   LargeImgRef.setAttribute('alt', `${target.alt}`);
-    LargeImgRef.setAttribute('data-element', `${target.dataset.element}`);
+   LargeImgRef.setAttribute('src', `${event.target.dataset.source}`);
+   LargeImgRef.setAttribute('alt', `${event.target.alt}`);
+    LargeImgRef.setAttribute('data-element', `${event.target.dataset.element}`);
 };
 
 function onCloseModal() {
