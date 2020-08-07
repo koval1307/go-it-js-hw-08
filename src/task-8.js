@@ -1,32 +1,5 @@
 import galleryItem from "./gallery-items.js";
 
-
-// шаг 1 Создание и рендер разметки по массиву данных и предоставленному шаблону.
-
-// const addGalleryItems = (image) => {
-//     const galleryItem = document.createElement("li");
-//     galleryItem.classList.add(".gallery__item");
-
-//     const galleryLink = document.createElement("a");
-//     galleryLink.classList.add("gallery__link");
-//     galleryLink.href = image.original;
-
-
-//     const galleryImg = document.createElement("img");
-//     galleryImg.classList.add("gallery__image");
-//     galleryImg.src = image.preview;
-//     galleryImg.dataSource = image.original;
-//     galleryImg.alt = image.descrition;
-
-//     galleryItem.appendChild(galleryLink);
-//     galleryLink.appendChild(galleryImg)
-
-//     return image;
-
-// }
-
-
-
 const galleryRef = document.querySelector(".js-gallery");
 const modalRef = document.querySelector('.js-lightbox');
 const modalBtnRef = document.querySelector(".lightbox__button");
@@ -55,9 +28,6 @@ function overlayClose() {
         onCloseModal()
     }
 };
-
-
-
 overlayRef.addEventListener('click', overlayClose);
 galleryRef.addEventListener('click', onOpenModal);
 modalBtnRef.addEventListener('click', onCloseModal);
