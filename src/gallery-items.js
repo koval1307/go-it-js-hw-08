@@ -15,10 +15,10 @@ export default [
   },
   {
     preview:
-      'https://pixabay.com/get/53e4d0464857af14f1dc8460da2932771338dded575073_640.jpg',
+      'https://pixabay.com/get/53e4d7404950a514f1dc8460da2932771338d7e3525477_640.jpg',
     original:
-      'https://pixabay.com/get/53e4d0464857af14f6da8c7dda35367b1c39d9e65b557540_1280.jpg',
-    description: 'Owl',
+      'https://pixabay.com/get/53e4d7404950a514f6da8c7dda35367b1c39d9ec5550794e_1280.jpg',
+    description: 'squirell',
   },
   {
     preview:
