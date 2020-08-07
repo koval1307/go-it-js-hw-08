@@ -48,11 +48,11 @@ function onCloseModal() {
     modalRef.classList.remove("is-open")
 };
 function escClose() {
-    if (event.key === "Escape") { modalRef.classList.remove("is-open")}
+    if (event.key === "Escape") { onCloseModal()}
 }
 function overlayClose() {
     if (event.target.nodeName !== 'IMG') {
-        modalRef.classList.remove("is-open")
+        onCloseModal()
     }
 };
 
