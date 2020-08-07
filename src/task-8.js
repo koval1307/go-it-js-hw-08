@@ -48,12 +48,18 @@ function onOpenModal() {
 function onCloseModal() {
     modalRef.classList.remove("is-open")
 };
-
-overlayRef.addEventListener('click', (event) => {
+function escClose() {
+    if (event.key === "Escape") { modalRef.classList.remove("is-open")}
+}
+function overlayClose() {
     if (event.target.nodeName !== 'IMG') {
-   onCloseModal
+        modalRef.classList.remove("is-open")
     }
-})
+};
 
+
+
+overlayRef.addEventListener('click', overlayClose);
 galleryRef.addEventListener('click', onOpenModal);
 modalBtnRef.addEventListener('click', onCloseModal);
+window.addEventListener('keyup', escClose);
