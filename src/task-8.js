@@ -1,5 +1,5 @@
 import galleryItem from "./gallery-items.js";
-console.log(galleryItem)
+
 
 // шаг 1 Создание и рендер разметки по массиву данных и предоставленному шаблону.
 
@@ -28,7 +28,7 @@ console.log(galleryItem)
 
 
 const galleryRef = document.querySelector(".js-gallery");
-const modalRef = document.querySelector(".js-lihgtbox");
+const modalRef = document.querySelector('.js-lightbox');
 const modalBtnRef = document.querySelector(".lightbox__button");
 const LargeImgRef = document.querySelector(".lightbox__image");
 const overlayRef = document.querySelector('.lightbox__content');
@@ -38,14 +38,15 @@ galleryItem.map((el) => {
 });
 
 function onOpenModal() {
-    event.preventDefault;
-   modalRef.classList.add('.is-open');
-
-
+    const target = event.target;
+    modalRef.classList.add("is-open");
+   LargeImgRef.setAttribute('src', `${target.dataset.source}`);
+   LargeImgRef.setAttribute('alt', `${target.alt}`);
+    LargeImgRef.setAttribute('data-element', `${target.dataset.element}`);
 };
 
 function onCloseModal() {
-    modalRef.classList.remove('.is-open')
+    modalRef.classList.remove("is-open")
 };
 
 overlayRef.addEventListener('click', (event) => {
