@@ -1,9 +1,9 @@
 export default [
   {
     preview:
-      'https://pixabay.com/get/53e4d6454350af14f1dc8460da293277123fd8ed575373_640.jpg',
+      'https://pixabay.com/get/53e4d0464a53af14f1dc8460da293277123edbec515470_640.jpg',
     original:
-      'https://pixabay.com/get/53e4d6454350af14f6da8c7dda35367b1c38dee35b557640_1280.jpg',
+      'https://pixabay.com/get/53e4d0464a53af14f6da8c7dda35367b1c38dfe05a527048_1280.jpg',
     description: 'Suspisious fox',
   },
   {
@@ -15,9 +15,9 @@ export default [
   },
   {
     preview:
-      'https://pixabay.com/get/53e2d7434950a414f1dc8460da293277123fd8ed565178_640.jpg',
+      'https://pixabay.com/get/53e4d5434f54ab14f1dc8460da293277123edbec505471_640.jpg',
     original:
-      'https://pixabay.com/get/53e2d7434950a414f6da8c7dda35367b1c38dee35b54734f_1280.jpg',
+      'https://pixabay.com/get/53e4d5434f54ab14f6da8c7dda35367b1c38dfe05a52774f_1280.jpg',
     description: 'squirell',
   },
   {

@@ -7,6 +7,11 @@ const modalBtnRef = document.querySelector(".lightbox__button");
 const LargeImgRef = document.querySelector(".lightbox__image");
 const overlayRef = document.querySelector('.lightbox__content');
 const gallerySrc = galleryItems.map((item) => item.original);
+const galleryList = galleryItem.map((el) =>`<li class="gallery__item"><a class="gallery__link" href=${el.original}><img class="gallery__image" src=${el.preview} data-source=${el.original} data-position=${el.index} alt=${el.description}/></a></li>`
+	).join(' ');
+
+galleryRef.insertAdjacentHTML('beforeend', galleryList);
+
 galleryItem.map((el) => {
     galleryRef.insertAdjacentHTML("beforeend", `<li class="gallery__item"<a class="gallery__link" href=${el.original}><img class="gallery__image"src=${el.preview} data-source=${el.original} alt=${el.description}/></a></li>`);
 });
@@ -53,3 +58,4 @@ galleryRef.addEventListener('click', onOpenModal);
 modalBtnRef.addEventListener('click', onCloseModal);
 window.addEventListener('keyup', escClose);
 window.addEventListener("keydown", nextImage);
+
