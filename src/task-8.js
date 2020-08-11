@@ -12,9 +12,7 @@ const galleryList = galleryItems.map((el) =>`<li class="gallery__item"><a class=
 
 galleryRef.insertAdjacentHTML('beforeend', galleryList);
 
-galleryItems.map((el) => {
-    galleryRef.insertAdjacentHTML("beforeend", `<li class="gallery__item"<a class="gallery__link" href=${el.original}><img class="gallery__image"src=${el.preview} data-source=${el.original} alt=${el.description}/></a></li>`);
-});
+
 
 function onOpenModal() {
     event.preventDefault();
