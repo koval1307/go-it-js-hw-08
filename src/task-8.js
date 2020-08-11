@@ -17,6 +17,7 @@ galleryItem.map((el) => {
 });
 
 function onOpenModal() {
+    event.preventDefault();
     modalRef.classList.add("is-open");
     const imageRef = event.target;
    LargeImgRef.setAttribute('src', `${imageRef.dataset.source}`);
@@ -43,6 +44,7 @@ function nextImage(key) {
     }
 }
 function onCloseModal() {
+    event.preventDefault();
     modalRef.classList.remove("is-open")
 };
 function escClose() {
